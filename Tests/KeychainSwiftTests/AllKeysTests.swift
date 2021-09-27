@@ -28,7 +28,7 @@ class AllKeysTests: XCTestCase {
     ]
     
     items.enumerated().forEach { enumerator in
-        self.obj!.set("\(enumerator.offset)", forKey: enumerator.element)
+        self.obj!.set("test string", forKey: enumerator.element)
     }
     
     XCTAssertEqual(["one", "two"], obj.allKeys)
